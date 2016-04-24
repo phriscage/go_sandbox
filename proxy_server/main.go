@@ -19,8 +19,8 @@ func main() {
 				log.Print("Do something with Authorization")
 			} else {
 				log.Print("Authorization is missing")
-				return r, goproxy.NewResponse(r, "application/json", http.StatusBadRequest,
-					`{"message": "Bad Request"}`)
+				//return r, goproxy.NewResponse(r, "application/json", http.StatusBadRequest,
+				//`{"message": "Bad Request"}`)
 			}
 			return r, nil
 		})
